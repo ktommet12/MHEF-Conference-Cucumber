@@ -1,3 +1,9 @@
-default: --no-source --color --format pretty
+ios-evo:         --no-source --color --format html --out test_output/Reports.html --format pretty conf=Evo platform=ios
+ios-brief:       --no-source --color --format html --out test_output/Reports.html --format pretty conf=Brief platform=ios
+ios-couples:     --no-source --color --format html --out test_output/Reports.html --format pretty conf=Brief platform=ios
+android-evo:     --no-source --color --format html --out test_output/Reports.html --format pretty conf=Evo platform=ios
+android-brief:   --no-source --color --format html --out test_output/Reports.html --format pretty conf=Brief platform=ios
+android-couples: --no-source --color --format html --out test_output/Reports.html --format pretty conf=Brief platform=ios
 
-# 
+restUrls: -p evo-contents
+evo-contents: evoContentsUrl=http://www.evolutionofpsychotherapy.com/wp-content/uploads/evolutionConference.json
